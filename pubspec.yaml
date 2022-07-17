@@ -1,6 +1,6 @@
 name: google_play_scraper
 description: Scraper google play store apps data
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/shhossain/google_play_scraper
 
 environment:

@@ -17,7 +17,7 @@ flutter pub add device_info_plus
 
 ```
 dependencies:
-    google_play_scraper: ^0.0.1
+    google_play_scraper: ^0.0.2
 ```
 
 ## Usage

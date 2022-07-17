@@ -3,11 +3,11 @@ import 'package:google_play_scraper/models.dart';
 
 void main(List<String> args) async {
   String appId = "com.google.android.youtube";
-  String appId2 = "com.github.android";
+  // String appId2 = "com.github.android";
 
   GooglePlayScraper googlePlayScraper = GooglePlayScraper();
   App gotApp = await googlePlayScraper.app(appId: appId);
-  App gotApp2 = await googlePlayScraper.app(appId: appId2);
+  // App gotApp2 = await googlePlayScraper.app(appId: appId2);
 
   var json = gotApp.toJson();
 
