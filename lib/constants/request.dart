@@ -3,7 +3,8 @@
 String Play_Store_Base_Url = "https://play.google.com";
 
 class _Detail {
-  String URL_FORMAT = "$Play_Store_Base_Url/store/apps/details?id={{app_id}}&hl={{lang}}&gl={{country}}";
+  String URL_FORMAT =
+      "$Play_Store_Base_Url/store/apps/details?id={{app_id}}&hl={{lang}}&gl={{country}}";
   String FALLBACK_URL_FORMAT =
       "$Play_Store_Base_Url/store/apps/details?id={{app_id}}&hl={{lang}}";
   String build(
@@ -26,7 +27,8 @@ class _Detail {
 }
 
 class _Reviews {
-  String URL_FORMAT = "$Play_Store_Base_Url/_/PlayStoreUi/data/batchexecute?hl={{lang}}&gl={{country}}";
+  String URL_FORMAT =
+      "$Play_Store_Base_Url/_/PlayStoreUi/data/batchexecute?hl={{lang}}&gl={{country}}";
   String PAYLOAD_FORMAT_FOR_FIRST_PAGE =
       "f.req=%5B%5B%5B%22UsvDTd%22%2C%22%5Bnull%2Cnull%2C%5B2%2C{sort}%2C%5B{count}%2Cnull%2Cnull%5D%2Cnull%2C%5Bnull%2C{score}%5D%5D%2C%5B%5C%22{app_id}%5C%22%2C7%5D%5D%22%2Cnull%2C%22generic%22%5D%5D%5D";
 
@@ -36,7 +38,11 @@ class _Reviews {
         .replaceAll("{{country}}", country);
   }
 
-  build_body({required String app_id,required int sort,required int count,required String filter_score_with,
+  build_body(
+      {required String app_id,
+      required int sort,
+      required int count,
+      required String filter_score_with,
       String? pagination_token}) {
     String result;
     if (pagination_token != null) {
@@ -59,7 +65,8 @@ class _Reviews {
 }
 
 class _Permissions {
-  String URL_FORMAT = "$Play_Store_Base_Url/_/PlayStoreUi/data/batchexecute?hl={{lang}}&gl={{country}}";
+  String URL_FORMAT =
+      "$Play_Store_Base_Url/_/PlayStoreUi/data/batchexecute?hl={{lang}}&gl={{country}}";
   String PAYLOAD_FORMAT_FOR_PERMISSION =
       "f.req=%5B%5B%5B%22xdSrCf%22%2C%22%5B%5Bnull%2C%5B%5C%22{{app_id}}%5C%22%2C7%5D%2C%5B%5D%5D%5D%22%2Cnull%2C%221%22%5D%5D%5D";
   String build({required String lang, required String country}) {
@@ -76,17 +83,19 @@ class _Permissions {
 }
 
 class _Searchresults {
-  String URL_FORMAT = "$Play_Store_Base_Url/store/search?q={{query}}&c=apps&hl={{lang}}&gl={{country}}";
+  String URL_FORMAT =
+      "$Play_Store_Base_Url/store/search?q={{query}}&c=apps&hl={{lang}}&gl={{country}}";
   String FALLBACK_URL_FORMAT =
       "$Play_Store_Base_Url/store/search?q={{query}}&c=apps&hl={{lang}}";
-  String build({required String query,required String lang,required String country}) {
+  String build(
+      {required String query, required String lang, required String country}) {
     return URL_FORMAT
         .replaceAll("{{query}}", query)
         .replaceAll("{{lang}}", lang)
         .replaceAll("{{country}}", country);
   }
 
-  String fallback_build({required String query,required String lang}) {
+  String fallback_build({required String query, required String lang}) {
     return FALLBACK_URL_FORMAT
         .replaceAll("{{query}}", query)
         .replaceAll("{{lang}}", lang);

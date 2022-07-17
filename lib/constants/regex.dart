@@ -1,6 +1,6 @@
 // ignore_for_file: non_constant_identifier_names
 
-class Regex{
+class Regex {
   static final NOT_NUMBER = RegExp(r"[^\d]");
   static final SCRIPT = RegExp(r"AF_initDataCallback[\s\S]*?<\/script");
   static final KEY = RegExp(r"(ds:.*?)'");

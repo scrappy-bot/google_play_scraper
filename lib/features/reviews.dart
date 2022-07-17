@@ -1,6 +1,4 @@
-
 // not implemented
-
 
 // // import json
 // // from time import sleep
@@ -186,7 +184,6 @@
 //   var r2 = r[r.length - 1];
 //   return [r[0], r[r.length - 1][r2.length - 1]];
 // }
-
 
 // reviews(
 //   String app_id, {

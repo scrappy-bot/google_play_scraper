@@ -1,7 +1,8 @@
 // ignore_for_file: non_constant_identifier_names, prefer_typing_uninitialized_variables
 
 import 'dart:convert';
-import 'package:google_play_scraper/constants/element.dart' show ElementSpecs, ElementSpec;
+import 'package:google_play_scraper/constants/element.dart'
+    show ElementSpecs, ElementSpec;
 import 'package:google_play_scraper/constants/regex.dart' show Regex;
 import 'package:google_play_scraper/constants/request.dart' show Formats;
 import 'package:google_play_scraper/utils/request.dart' show Get;
