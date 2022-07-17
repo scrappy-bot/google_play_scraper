@@ -1,4 +1,5 @@
 # Google_Play_Scraper for Flutter And Dart
+[![Google Play Scraper](https://github.com/shhossain/google_play_scraper/workflows/Test/badge.svg)](https://github.com/shhossain/google_play_scraper/actions/workflows/flutter.yml)
 
 Google_Play_Scraper for dart and flutter helps you to easly scrap data google play website.
 
@@ -17,7 +18,7 @@ flutter pub add device_info_plus
 
 ```
 dependencies:
-    google_play_scraper: ^0.0.2
+    google_play_scraper: ^0.0.3
 ```
 
 ## Usage

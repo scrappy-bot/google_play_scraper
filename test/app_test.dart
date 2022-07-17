@@ -1,4 +1,4 @@
-import 'package:flutter_test/flutter_test.dart';
+import 'package:test/test.dart';
 
 import 'package:google_play_scraper/google_play_scraper.dart';
 import 'package:google_play_scraper/models.dart';
