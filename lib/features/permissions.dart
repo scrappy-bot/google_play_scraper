@@ -3,10 +3,10 @@
 // ignore_for_file: non_constant_identifier_names
 
 import 'dart:convert';
-import '../constants/regex.dart' show Regex;
-import '../constants/request.dart' show Formats;
-import '../utils/request.dart' show post;
-import '../constants/element.dart' show ElementSpecs;
+import 'package:google_play_scraper/constants/regex.dart' show Regex;
+import 'package:google_play_scraper/constants/request.dart' show Formats;
+import 'package:google_play_scraper/utils/request.dart' show post;
+import 'package:google_play_scraper/constants/element.dart' show ElementSpecs;
 
 Future<Map> permission(
     {required String app_id,

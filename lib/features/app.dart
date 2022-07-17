@@ -1,18 +1,14 @@
-
 // ignore_for_file: non_constant_identifier_names, prefer_typing_uninitialized_variables
 
-
-
 import 'dart:convert';
-import '../constants/element.dart' show ElementSpecs, ElementSpec;
-import '../constants/regex.dart' show Regex;
-import '../constants/request.dart' show Formats;
-import '../utils/request.dart' show Get;
-import '../exceptions.dart' show NotFoundError;
+import 'package:google_play_scraper/constants/element.dart' show ElementSpecs, ElementSpec;
+import 'package:google_play_scraper/constants/regex.dart' show Regex;
+import 'package:google_play_scraper/constants/request.dart' show Formats;
+import 'package:google_play_scraper/utils/request.dart' show Get;
+import 'package:google_play_scraper/exceptions.dart' show NotFoundError;
 
-
-
-Future<Map> app({required String app_id, String lang = "en", String country = "us"}) async {
+Future<Map> app(
+    {required String app_id, String lang = "en", String country = "us"}) async {
   var url = Formats.Detail.build(app_id: app_id, lang: lang, country: country);
   var dom;
   try {
@@ -44,7 +40,7 @@ parse_dom({required String dom, required String app_id, required String url}) {
 
         var value = json.decode(value_match.first.group(1));
         dataset[key] = value;
-      // ignore: empty_catches
+        // ignore: empty_catches
       } catch (e) {}
     }
   }
@@ -78,9 +74,9 @@ parse_dom({required String dom, required String app_id, required String url}) {
 // test
 
 // void main(List<String> args) async {
-//   var app_id = "com.microsoft.office.outlook";
+//   var app_id = "com.github.android";
 //   var lang = "en";
 //   var country = "us";
 //   var result = await app(app_id: app_id, lang: lang, country: country);
-//   print(result['icon']);
+//   print(result['title']);
 // }

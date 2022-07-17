@@ -101,7 +101,7 @@ class App {
   final String? descriptionHTML;
   final String? summary;
   final String? installs;
-  final String? minInstalls;
+  final int? minInstalls;
   final double? score;
   final int? ratings;
   final int? reviews;
@@ -125,7 +125,7 @@ class App {
   final String? genreId;
   final String? icon;
   final String? headerImage;
-  final List<String>? screenshots;
+  final List? screenshots;
   final String? video;
   final String? videoImage;
   final String? contentRating;
@@ -137,7 +137,7 @@ class App {
   final String? version;
   final String? recentChanges;
   final String? recentChangesHTML;
-  final List<String>? comments;
+  final List? comments;
   final String appId;
   final String url;
 
@@ -187,7 +187,7 @@ class App {
       required this.appId,
       required this.url});
 
-  factory App.fromJson(Map<String, dynamic> json) {
+  factory App.fromJson(Map<dynamic, dynamic> json) {
     return App(
         title: json['title'],
         description: json['description'],
@@ -226,7 +226,7 @@ class App {
         adSupported: json['adSupported'],
         containsAds: json['containsAds'],
         released: json['released'],
-        updated: json['updated'],
+        updated: json['updated'].toString(),
         version: json['version'],
         recentChanges: json['recentChanges'],
         recentChangesHTML: json['recentChangesHTML'],
