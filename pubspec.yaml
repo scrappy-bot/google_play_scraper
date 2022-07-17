@@ -1,7 +1,7 @@
 name: google_play_scraper
-description: Scrapes Google Play for apps and their data
+description: Scraper google play store apps data
 version: 0.0.1
-homepage:
+homepage: https://github.com/shhossain/google_play_scraper
 
 environment:
   sdk: ">=2.17.6 <3.0.0"
@@ -10,6 +10,14 @@ environment:
 dependencies:
   html_unescape: ^2.0.0
   http: ^0.13.4
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
 
 dev_dependencies:
   flutter_test:
