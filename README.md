@@ -11,15 +11,6 @@ Google_Play_Scraper for dart and flutter helps you to easly scrap data google pl
 
 This project is created from avobe two projects. 
 
-## Installation
-```
-flutter pub add device_info_plus
-```
-
-```
-dependencies:
-    google_play_scraper: ^0.0.4
-```
 
 ## Usage
 

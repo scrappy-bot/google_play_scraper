@@ -1,6 +1,6 @@
 name: google_play_scraper
-description: Scraper google play store apps data
-version: 0.0.4
+description: A package to get app information from Google Play Store
+version: 0.0.5
 homepage: https://github.com/shhossain/google_play_scraper
 
 environment:
