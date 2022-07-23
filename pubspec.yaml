@@ -1,6 +1,6 @@
 name: google_play_scraper
 description: Google Play Scraper for flutter and dart helps you to get apks information from google play store
-version: 0.0.5
+version: 0.0.6
 homepage: https://github.com/shhossain/google_play_scraper
 
 environment:

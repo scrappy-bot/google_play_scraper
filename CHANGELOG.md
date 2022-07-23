@@ -1,4 +1,4 @@
-## 0.0.5
+## 0.0.6
 Get apk permission informations.
 ### Features
  - Get App data from appid.
