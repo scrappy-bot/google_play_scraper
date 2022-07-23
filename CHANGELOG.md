@@ -1,8 +1,9 @@
 ## 0.0.5
-
-### Bug fixes.
-
+Get apk permission informations.
+### Features
+ - Get App data from appid.
+ - Get Apk permission info from appid.
 ## 0.0.4
 
-### Futures 
+### Features
  - Get App data from appid.

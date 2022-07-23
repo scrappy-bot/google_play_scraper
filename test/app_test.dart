@@ -24,4 +24,21 @@ void main() {
     expect(result, true);
     expect(result2, true);
   });
+  test('Test Permissions', () async {
+    // test permissions
+    String appId = "com.google.android.youtube";
+    GooglePlayScraper googlePlayScraper = GooglePlayScraper();
+
+    var expectedKey = 'Camera';
+    var expectedValue = 'take pictures and videos';
+    var expectedKey2 = 'Identity';
+    var expectedValue2 = 'find accounts on the device';
+
+    var permissions = await googlePlayScraper.permissions(appId: appId);
+    var result3 = permissions[expectedKey]?.contains(expectedValue) ?? false;
+    var result4 = permissions[expectedKey2]?.contains(expectedValue2) ?? false;
+
+    expect(result3, true);
+    expect(result4, true);
+  });
 }

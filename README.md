@@ -1,7 +1,7 @@
 # Google_Play_Scraper for Flutter And Dart
 [![Google Play Scraper](https://github.com/shhossain/google_play_scraper/workflows/Test/badge.svg)](https://github.com/shhossain/google_play_scraper/actions/workflows/flutter.yml)
 
-Google_Play_Scraper for dart and flutter helps you to easly scrap data google play website.
+Google_Play_Scraper for flutter and dart helps you to get apks information from google play store.
 
 ## Related Projects
 ### [google-play-scraper](https://github.com/facundoolano/google-play-scraper)
@@ -14,6 +14,7 @@ This project is created from avobe two projects.
 
 ## Usage
 
+### App info from appID
 ```dart
 import 'package:google_play_scraper/google_play_scraper.dart';
 
@@ -103,6 +104,33 @@ print(json)
 //recentChanges: For new features,
 // look for in-product education & notifications sharing the feature and how to use it!,
 // recentChangesHTML: For new features, look for in-product education &amp; notifications sharing the feature and how to use it!, comments: [[BioResidentSKG, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucrdkbKBWT4i-mqyYJhOdLoSMMPj4zenyAmKYjZyQAQ]]], [magan moore, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucrJqGiC09eCUmKooMiZYYUN5lcRkgOCYLZEFFI5GQ]]], [DJ, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucquwHHQPDjLn_XTvAZeRli3UoXKkHIddk_NQQzraw]]], [Jose Montoya, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a/AItbvmkjTX4_MCtuBjto5EiEUOvBQyMTAhMrXsYdOlV8=mo]]], [Eleven, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucpZXa4bi_NCI8316IDeE0snwxidyMbrfS06AAod]]], [Vernon Wallace, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucoVlMvECO2o_jGiRGhhh0qh-D9WA-kL7q8vtPz61g]]], [Derek Wood, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucqBDfcHBTeL2sSv5vvgLOHofZOR56CcrQQywmhU7A]]], [Nuggetchilly, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucpGpRD60SQbGKGmi_O-qx1Oy6fi_AR8V8tpEs5g]]], [Derek Fudge, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a/AItbvmkvVbLaKwCOPJ2SdpmI25l6TKMF6Ha7-Wb7peOv=mo]]], [Dawn KindnessCountsMost, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucqBjQFPEJnVwtOk5kMU84pl7ATYg-vPYSDG1D_X]]], [Jennifer Bethke, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucr-3dX2xTNgfutobshkbhbAuruCpcWqBq9ihe_stQ]]], [Keisha Brown, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucpkSqjdGHR36t6zpgjX9g3zb21d1O3vlo6nKUm5lQ]]], [Sam Jordan, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucqgxUovxAVUG5iE6aYQgxU1nPfOkaF0P2htw0ZbvBM]]], [Evan Langnes, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucoHXmE3mZT0owjJhbMN9xUtavIg-3ug1tmxUWlA]]], [Shrungs Impostor, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucr0NVOm2S84gCDdK3eF_6t0-APytCrCzie9CGBT]]], [Mike Lee, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucp2DAuD2CUMj-8MqmUtr8KGv49CQfywm452t-0Wiwo]]], [KronkMonk, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucqMsjJpzd8djJQTjWrF_Ivv1yEIpnZmobduNTdCdw]]], [Ashley T., [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucoSnp8616jEoMszoA2Zb-9aIRteGJNvoHQacipaoQ]]], [Steven Schatzberg, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucqUrmGMjMc-IhFVjnMTzuaipWiM8B7K-SIkOKq2iw]]], [Cheng Vue, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a/AItbvmnWgWE76WORsGn4Q0zaq8aXH8JL4p0LpizEBZqn=mo]]], [Jordan McHaley, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a/AItbvmnsVWC17t0UgO_IPncUWMSzAXiwJNKWOaEy7Hf5=mo]]], [Anna Blant, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a/AItbvmmkU5makyPznp_hrlmkod98z8z4Wh9addhgU1s0=mo]]], [Diane DeHart, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucou2643daQBWCMY2xO5nEY_9aE6TDgcC-SRszl-SMg]]], [John Boland, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a/AItbvmlsCiZXEdTY-htkcfTiRRul_p-l7wiaGaqP7_8-=mo]]], [Raymond Noodles, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucrjjkK8pmUjmu4AUcT3GuLG3Hx0E_KBrwubb5DN]]], [AllenWalkerAnime7, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucomfMRTtR-4VQu_YMb6WEdTmBB0m5HKWHxh3rAkGiw]]], [Whoever this guy is idk, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucpbeyB9IXxjidDBo71hrbtAQRT9p69BxYoe8Hn0FWg]]], [HR LEGO, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucoTXeYFaF-6Oj9R1oN3YKb-AOlQczXoonRsBmU1]]], [ronny Brown, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a/AItbvmlS-wGOsSABhR9xHhaeP1AXHu8yAfL8U9IXpZiR=mo]]], [Jake Shirk, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucrhIFLsJH_keZ2_-RlChi1_f6pS6NZW3ROGlYiF]]], [Sheldon Eason, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucrbWehA7dbxdDKB4h-aZgRNNgEiu40iq1kd48XvwA]]], [Ryan Hinz, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucob2HsQh8vc1UNw1APF-m-NIv1bwR6UpeWCRdhQfw]]], [Allan Gacerez, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucq_-oSNgLlFHZyOu3fVTHPWWlfzXSrib4DUH-KBRg]]], [Kathy Lough, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a/AItbvmmSbjIpbSqQNftW1juzLediO5BNsqR_2abJkdgF=mo]]], [Peter Nielson, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a/AItbvmk3-3nIbaVbKB4vmTKJzCs0I3Kap3-bAZkbZ5ws=mo]]], [JA S, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucp9K5GxWYpPYt0_YPbCdmjt7ykHlYI6cSKV-Lj8LA]]], [Late Night Cereal, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a/AItbvmkz-uhv2FY-XVCDDcqnLg-9shm9QPgC4v2Lhg8G=mo]]], [Chief Executive Lalo, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a-/AFdZucroGliH5oj5s2XUAcOnHjTo2Ht-gfr_aHef6UAi2g]]], [captain ravioli, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a/AItbvmkhnVP-NG3PY_dlXGJsVDV_lskQzMsYRMPRqau9=mo]]], [Not Not, [null, 2, null, [null, null, https://play-lh.googleusercontent.com/a/AItbvmmOUcfigagZKbkUqxCrgx5_MSht2p6mnAtxK8EE=mo]]]], appId: com.google.android.youtube, url: https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en&gl=us}
+
+```
+### App permission from appID
+```dart
+import 'package:google_play_scraper/google_play_scraper.dart';
+
+String appId = "com.google.android.youtube";
+GooglePlayScraper googlePlayScraper = GooglePlayScraper();
+
+var permissions = await googlePlayScraper.permissions(appId: appId);
+
+print(permissions);
+
+// result
+// {
+//    Identity: [find accounts on the device, add or remove accounts],
+//    Phone: [read phone status and identity],
+//    Microphone: [record audio],
+//    Location: [approximate location (network-based), precise location (GPS and network-based)],
+//    Storage: [modify or delete the contents of your USB storage, read the contents of your USB storage],
+//    Device ID & call information: [read phone status and identity], 
+//    Photos/Media/Files: [modify or delete the contents of your USB storage, read the contents of your USB storage], Contacts: [read your contacts, find accounts on the device], 
+//    Camera: [take pictures and videos], 
+//    Wi-Fi connection information: [view Wi-Fi connections], 
+//    Other: [control Near Field Communication, view network connections, full network access, draw over other apps, run at startup, control vibration, measure app storage space, prevent device from sleeping, use accounts on the device, read Google service configuration], 
+//    Uncategorized: [manage document storage, receive data from Internet]
+//}
 
 ```
 
