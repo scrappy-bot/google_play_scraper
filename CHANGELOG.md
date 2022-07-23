@@ -1,3 +1,9 @@
+## 0.0.8
+Fixed exmaple.
+### Features
+ - Get App data from appid.
+ - Get Apk permission info from appid.
+
 ## 0.0.7
 Bug fixes.
 ### Features
