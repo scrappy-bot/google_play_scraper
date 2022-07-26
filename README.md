@@ -4,8 +4,8 @@
 Google Play Store Scraper for flutter and dart helps you to get apks information from google play store.
 
 ## Important Links
-(GitHub) [https://github.com/shhossain/google_play_scraper]
-(PUB) [https://pub.dev/packages/google_play_scraper]
+[GitHub] (https://github.com/shhossain/google_play_scraper)
+[PUB] (https://pub.dev/packages/google_play_scraper)
 
 
 ## Related Projects

@@ -1,3 +1,9 @@
+## 0.0.10
+Readme.md changed.
+### Features
+ - Get App data from appid.
+ - Get Apk permission info from appid.
+
 ## 0.0.9
 Readme.md changed.
 ### Features
