@@ -1,7 +1,12 @@
-# Google_Play_Scraper for Flutter And Dart
+# Google Play Store Scraper Dart and Flutter
 [![Google Play Scraper](https://github.com/shhossain/google_play_scraper/workflows/Test/badge.svg)](https://github.com/shhossain/google_play_scraper/actions/workflows/flutter.yml)
 
-Google_Play_Scraper for flutter and dart helps you to get apks information from google play store.
+Google Play Store Scraper for flutter and dart helps you to get apks information from google play store.
+
+## Important Links
+(GitHub) [https://github.com/shhossain/google_play_scraper]
+(PUB) [https://pub.dev/packages/google_play_scraper]
+
 
 ## Related Projects
 ### [google-play-scraper](https://github.com/facundoolano/google-play-scraper)
@@ -9,7 +14,7 @@ Google_Play_Scraper for flutter and dart helps you to get apks information from 
 ### [google-play-scraper](https://github.com/JoMingyu/google-play-scraper)
 > Python scraper to get date from Google Play
 
-This project is created from avobe two projects. 
+This project is created from above two projects. 
 
 
 ## Usage
