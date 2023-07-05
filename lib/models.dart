@@ -199,7 +199,7 @@ class App {
         ratings: json['ratings'],
         reviews: json['reviews'],
         histogram: json['histogram'],
-        price: json['price'],
+        price: json['price'].toDouble(),
         isFree: json['free'],
         currency: json['currency'],
         isSale: json['sale'],
